@@ -1,20 +1,40 @@
 {
-  "name": "backend",
+  "name": "booking-api-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Booking/reservation system REST API built with Node.js, Express, and MongoDB",
+  "main": "src/app.js",
+  "type": "commonjs",
   "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "keywords": [
+    "booking",
+    "reservation",
+    "api",
+    "express",
+    "mongodb"
+  ],
+  "author": "Sumit",
+  "license": "MIT",
   "dependencies": {
-    "cors": "^2.8.6",
-    "express": "^5.2.1"
+    "express": "^4.19.2",
+    "mongoose": "^8.5.0",
+    "dotenv": "^16.4.5",
+    "cors": "^2.8.5",
+    "jsonwebtoken": "^9.0.2",
+    "luxon": "^3.5.0",
+    "bcryptjs": "^2.4.3",
+    "zod": "^3.23.8",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "express-rate-limit": "^7.4.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.14"
+    "nodemon": "^3.1.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
